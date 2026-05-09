@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Isaac Malou</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals. Isaac Malou's portfolio demonstrating HTML, CSS, and JavaScript fundamentals.">
+    <meta name="author" content="Isaac Malou">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Isaac Malou</h1>
+    <header>
+        <span id="course-title">WDD 131 Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank"
+                rel="noopener noreferrer">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Isaac Malou</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.png" alt="Isaac Malou Profile Picture" width="200" height="200">
+            <p>Hello! I am a Graphic Designer from Juba, South Sudan. I enjoy creating visual designs and bringing ideas
+                to life through technology.</p>
+        </section>
+
+        <section class="card">
+            <h2>Web Resources</h2>
+            <img src="images/placeholder.jpg" alt="Web Development icon" width="200" height="200">
+            <p>This section will contain links and resources related to my coursework, CSS, and JavaScript development.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Isaac Malou | Juba, South Sudan</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
