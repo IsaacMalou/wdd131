@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="A responsive temple gallery page featuring a dynamic hamburger menu and grid layout.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheets (Mobile First) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Temples</h2>
+        <div class="grid-container">
+            <!-- 9 Figure Elements using placeholder images -->
+            <figure>
+                <img src="images/aba_nigeria_temple_lds.webp" alt="Nigeria Temple" loading="lazy">
+                <figcaption>Nigeria Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/japan_temple.webp" alt="Japan Temple" loading="lazy">
+                <figcaption>Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nicaragua_temple.webp" alt="Nicaragua Temple" loading="lazy">
+                <figcaption>Nicaragua Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/paris_france_temple_exterior.webp" alt="St. Paris Temple" loading="lazy">
+                <figcaption>St. Paris Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/nairobi_kenya_temple_exterior.webp" alt="Nairobi Kenya Temple" loading="lazy">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/ephraim_utah_temple_art_rendering_front_blue_sky_dome.webp" alt="Ephraim Utah Temple" loading="lazy">
+                <figcaption>Ephraim Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cape_town_africa_temple_rendering.webp" alt="Cape Town Africa Temple" loading="lazy">
+                <figcaption>Cape Town Africa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/apia_samoa_temple_lds.webp" alt="Apia Samoa Temple" loading="lazy">
+                <figcaption>Apia Samoa Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/abidjan_ivory_coast_temple_exterior.webp" alt="Abidjan Ivory Coast Temple" loading="lazy">
+                <figcaption>Abidjan Ivory Coast Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Isaac Malou | WDD 131 Course</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
