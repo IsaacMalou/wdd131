@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Juba, South Sudan</title>
+    <meta name="description" content="A page dedicated to Juba, showcasing weather and demographic data.">
+    <meta name="author" content="Isaac Malou">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Juba, South Sudan</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+
+            <picture class="hero">
+                <source srcset="images/juba-view-large.jpg" media="(min-width: 768px)">
+                <img src="images/juba-view-small.jpg" alt="Landscape view of Juba, South Sudan" width="500"
+                    height="300" loading="lazy">
+            </picture>
+
+            <section class="card data-card">
+                <h2>Data</h2>
+                <p><strong>Area:</strong> 644,329 sq km</p>
+                <p><strong>Population:</strong> ~500,000</p>
+                <p><strong>Capital:</strong> Juba</p>
+                <p><strong>Languages:</strong> English, Juba Arabic</p>
+                <p><strong>Currency:</strong> South Sudanese Pound (SSP)</p>
+                <p><strong>Time Zone:</strong> UTC+2</p>
+                <p><strong>Calling Code:</strong> +211</p>
+            </section>
+
+            <section class="card weather-card">
+                <h2>Weather <span class="desktop-weather-icon"></span></h2>
+
+                <img src="images/weather-icon.svg" alt="Sunny weather icon" class="mobile-icon" width="60" height="60">
+
+                <p><strong>Temperature:</strong> <span id="temperature">35</span> °C</p>
+                <p><strong>Conditions:</strong> Sunny</p>
+                <p><strong>Wind:</strong> <span id="windSpeed">10</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Isaac Malou 🌸 South Sudan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
