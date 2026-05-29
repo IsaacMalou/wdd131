@@ -1,4 +1,4 @@
-// 1. Array of Temple Objects (Includes 3 custom additions at the bottom)
+// 1. Array of Temple Objects (Includes 3 custom additions with working URLs at the bottom)
 const temples = [
     {
         templeName: "Aba Nigeria",
@@ -51,27 +51,27 @@ const temples = [
     },
     // Custom Addition 1
     {
-        templeName: "Salt Lake",
-        location: "Salt Lake City, Utah",
-        dedicated: "1893, April, 6",
-        area: 382207,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/salt-lake/400x250/salt-lake-temple-1033285-wallpaper.jpg"
+        templeName: "Logan Utah",
+        location: "Logan, Utah, United States",
+        dedicated: "1884, May, 17",
+        area: 119619,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/logan-utah/400x250/logan-temple-768119-wallpaper.jpg"
     },
     // Custom Addition 2
     {
-        templeName: "Paris France",
-        location: "Le Chesnay, France",
-        dedicated: "2017, May, 21",
-        area: 44000,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/paris-france/400x250/paris-temple-lds-1981885-wallpaper.jpg"
+        templeName: "Vernal Utah",
+        location: "Vernal, Utah, United States",
+        dedicated: "1997, November, 2",
+        area: 38771,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/vernal-utah/400x250/vernal-temple-lds-82531-wallpaper.jpg"
     },
     // Custom Addition 3
     {
-        templeName: "Rome Italy",
-        location: "Rome, Italy",
-        dedicated: "2019, March, 10",
-        area: 41010,
-        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/rome-italy/400x250/rome-italy-temple-exterior-223403.jpg"
+        templeName: "Bountiful Utah",
+        location: "Bountiful, Utah, United States",
+        dedicated: "1995, January, 8",
+        area: 104000,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/400x250/bountiful-temple-766347-wallpaper.jpg"
     }
 ];
 
