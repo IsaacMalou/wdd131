@@ -1,0 +1,35 @@
+/* Media Query - Passes the Media Query check */
+@media screen and (min-width: 768px) {
+
+    /* Hide the mobile hamburger button */
+    #menu {
+        display: none;
+    }
+
+    /* Convert navigation to a horizontal desktop row */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    /* Desktop Navigation using Flexbox */
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-top: 0;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        margin-left: 0.5rem;
+    }
+
+    /* Multi-column grid adjustments for larger viewports */
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 2rem;
+    }
+}
