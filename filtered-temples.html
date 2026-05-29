@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Temple Album</title>
+    <meta name="author" content="Isaac Malou">
+    <meta name="description"
+        content="A responsive filtered temple gallery page featuring a dynamic hamburger menu, filtering, and grid layout.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        <nav>
+            <a href="#" id="home" class="active" title="View all temples">Home</a>
+            <a href="#" id="old" title="Built before 1900">Old</a>
+            <a href="#" id="new" title="Built after 2000">New</a>
+            <a href="#" id="large" title="Larger than 90,000 sq ft">Large</a>
+            <a href="#" id="small" title="Smaller than 10,000 sq ft">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Temples</h2>
+
+        <div class="grid-container" id="temple-container">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Isaac Malou | WDD 131 Course</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
