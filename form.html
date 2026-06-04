@@ -21,38 +21,38 @@
             <fieldset class="main-fieldset">
                 <legend class="sr-only">Review Details</legend>
 
-                <label for="productName">Product Name</label>
+                <label for="productName">Product Name <span class="required-indicator">*</span></label>
                 <select id="productName" name="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
 
                 <fieldset class="rating-group">
-                    <legend>Overall Rating</legend>
+                    <legend>Overall Rating <span class="required-indicator">*</span></legend>
                     <div class="stars">
                         <div class="star-col">
                             <label for="star1">&#9734;</label>
-                            <input type="radio" id="star1" name="rating" value="1" required>
+                            <input type="radio" id="star1" name="rating" value="1" required aria-label="1 Star">
                         </div>
                         <div class="star-col">
                             <label for="star2">&#9734;&#9734;</label>
-                            <input type="radio" id="star2" name="rating" value="2" required>
+                            <input type="radio" id="star2" name="rating" value="2" required aria-label="2 Stars">
                         </div>
                         <div class="star-col">
                             <label for="star3">&#9734;&#9734;&#9734;</label>
-                            <input type="radio" id="star3" name="rating" value="3" required>
+                            <input type="radio" id="star3" name="rating" value="3" required aria-label="3 Stars">
                         </div>
                         <div class="star-col">
                             <label for="star4">&#9734;&#9734;&#9734;&#9734;</label>
-                            <input type="radio" id="star4" name="rating" value="4" required>
+                            <input type="radio" id="star4" name="rating" value="4" required aria-label="4 Stars">
                         </div>
                         <div class="star-col">
                             <label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
-                            <input type="radio" id="star5" name="rating" value="5" required>
+                            <input type="radio" id="star5" name="rating" value="5" required aria-label="5 Stars">
                         </div>
                     </div>
                 </fieldset>
 
-                <label for="installDate">Date of Installation</label>
+                <label for="installDate">Date of Installation <span class="required-indicator">*</span></label>
                 <input type="date" id="installDate" name="installDate" required>
 
                 <fieldset class="features-group">
