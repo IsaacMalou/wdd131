@@ -1,0 +1,158 @@
+:root {
+    --primary-color: #3f103f;
+    --bg-color: #f4f4f4;
+    --form-bg: #d9c8d9;
+    --text-color: #333;
+    --border-color: #aaa;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- Form Specifics --- */
+.review-form {
+    background-color: var(--form-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Fix radio and checkboxes alignment */
+.stars label,
+.features-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0;
+    font-weight: normal;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.stars input[type="radio"],
+.features-group input[type="checkbox"] {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* --- Confirmation Page Specifics --- */
+.confirmation-container {
+    text-align: center;
+}
+
+.counter-box {
+    background-color: var(--form-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    display: inline-block;
+    min-width: 200px;
+}
+
+.counter-box h3 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0 0 0;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #220922;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
