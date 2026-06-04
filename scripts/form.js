@@ -1,4 +1,4 @@
-// Product Array provided in instructions
+// form.js - Handles dynamic population of product dropdown and footer information
 const products = [
     { id: "fc-1888", name: "flux capacitor", averagerating: 4.5 },
     { id: "fc-2050", name: "power laces", averagerating: 4.7 },
@@ -8,7 +8,7 @@ const products = [
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
-    // 1. Populate the Product Selection Dropdown
+    // 1. Dynamically Populate Product Dropdown
     const productSelect = document.getElementById("productName");
 
     products.forEach(product => {
