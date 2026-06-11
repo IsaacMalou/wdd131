@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover digital job opportunities, internships, and learning resources in South Sudan.">
+    <meta name="author" content="Isaac Malou">
+    
+    <title>Opportunities - South Sudan Digital Hub</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="images/ssdh_logo0.png" alt="SSDH Logo" class="nav-logo">
+                <span>South Sudan Digital Hub</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opportunities.html" class="active">Opportunities</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Digital Opportunities in South Sudan</h1>
+            <p>Jobs, internships, training, and resources to advance your career</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Filter Section -->
+            <section class="filter-section">
+                <h2>Find Your Opportunity</h2>
+                <div class="filter-controls">
+                    <div class="filter-group">
+                        <label for="typeFilter">Type:</label>
+                        <select id="typeFilter">
+                            <option value="">All Types</option>
+                            <option value="job">Full-time Job</option>
+                            <option value="internship">Internship</option>
+                            <option value="training">Training Course</option>
+                            <option value="resource">Learning Resource</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="skillFilter">Skill Level:</label>
+                        <select id="skillFilter">
+                            <option value="">All Levels</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-secondary" id="resetFilters">Reset Filters</button>
+                </div>
+            </section>
+
+            <!-- Results Count -->
+            <div class="results-info">
+                <p>Showing <span id="resultsCount">0</span> opportunities</p>
+            </div>
+
+            <!-- Opportunities List -->
+            <section class="opportunities-list" id="opportunitiesList">
+                <!-- Populated by JavaScript -->
+            </section>
+
+            <!-- No Results Message -->
+            <div id="noResults" class="no-results" style="display: none;">
+                <p>No opportunities match your filters. Try adjusting your criteria.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>South Sudan Digital Hub</h4>
+                <p>Empowering youth through technology and innovation</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@ssdh.org</p>
+                <p>Phone: +211 (092) 933-7699</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 South Sudan Digital Hub. All rights reserved.</p>
+            <p><a href="about.html#references">References & Attributions</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

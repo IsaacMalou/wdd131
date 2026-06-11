@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about South Sudan Digital Hub mission, team, and vision for digital transformation.">
+    <meta name="author" content="Isaac Malou">
+    
+    <title>About - South Sudan Digital Hub</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="images/ssdh_logo0.png" alt="SSDH Logo" class="nav-logo">
+                <span>South Sudan Digital Hub</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>About South Sudan Digital Hub</h1>
+            <p>Our mission to transform South Sudan through technology and innovation</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Mission Section -->
+            <section class="about-section">
+                <h2>Our Mission</h2>
+                <p>
+                    South Sudan Digital Hub is dedicated to connecting young people with the digital skills, 
+                    knowledge, and opportunities they need to succeed in the 21st century economy. We believe that 
+                    technology and digital literacy are fundamental tools for breaking cycles of poverty and creating 
+                    sustainable economic growth in South Sudan.
+                </p>
+                <p>
+                    Through partnerships with tech companies, educational institutions, and government agencies, we 
+                    provide practical training, job opportunities, and resources that empower our youth to participate 
+                    in the global digital economy while contributing to local innovation.
+                </p>
+            </section>
+
+            <!-- Vision Section -->
+            <section class="about-section">
+                <h2>Our Vision</h2>
+                <p>
+                    A South Sudan where every young person has access to digital skills training, quality employment 
+                    opportunities, and the tools to build their own tech ventures. We envision a nation where 
+                    innovation flourishes, entrepreneurs thrive, and technology serves as a bridge to economic 
+                    prosperity for all.
+                </p>
+            </section>
+
+            <!-- Impact Stories -->
+            <section class="about-section">
+                <h2>Impact Stories</h2>
+                <div class="stories-grid">
+                    <article class="story-card">
+                        <h3>Amira's Tech Transformation</h3>
+                        <p class="story-role">Web Developer | Juba</p>
+                        <p>
+                            "Through the digital skills training at SSDH, I learned web development and landed my first 
+                            remote job. Now I'm building websites for clients across Africa. SSDH gave me the opportunity 
+                            I was waiting for."
+                        </p>
+                    </article>
+                    <article class="story-card">
+                        <h3>Taban's Startup Success</h3>
+                        <p class="story-role">Founder, Digital Solutions Co. | Juba</p>
+                        <p>
+                            "SSDH connected me with mentors and investors who believed in my mobile app idea. Today, my 
+                            startup employs 12 people and we're solving real problems for South Sudanese communities."
+                        </p>
+                    </article>
+                    <article class="story-card">
+                        <h3>Muna's Teaching Journey</h3>
+                        <p class="story-role">Tech Educator | Wau</p>
+                        <p>
+                            "I became an instructor at SSDH to share my skills. Watching students transition from no tech 
+                            knowledge to building actual projects is the most rewarding work I've ever done."
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="about-section">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="images/team-member-1.png" alt="Isaac Malou" loading="lazy">
+                        <h3>Isaac Malou</h3>
+                        <p>Executive Director</p>
+                        <p class="bio">Tech entrepreneur and education advocate with 8+ years experience in digital transformation initiatives.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team-member-2.png" alt="Team member" loading="lazy">
+                        <h3>Ayen Kuol</h3>
+                        <p>Training Director</p>
+                        <p class="bio">Software engineer and educator dedicated to building relevant tech training programs for African youth.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/team-member-3.png" alt="Team member" loading="lazy">
+                        <h3>Lula Aker</h3>
+                        <p>Partnerships Manager</p>
+                        <p class="bio">Business development expert connecting students with employers and educational partners across the region.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="about-section contact-section">
+                <h2>Get in Touch</h2>
+                <p>Have questions or want to partner with us? We'd love to hear from you!</p>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Full Name *</label>
+                        <input type="text" id="contactName" name="name" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <input type="text" id="contactSubject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="contactMessage" class="form-message"></div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- References Section -->
+    <section id="references" class="references-section">
+        <div class="container">
+            <h2>References & Attributions</h2>
+            <p>This website project uses the following resources:</p>
+            
+            <h3>Image Attribution</h3>
+            <ul>
+                <li>SSDH Logo - Original design</li>
+                <li>Hero image - Unsplash (Tech imagery for representation)</li>
+                <li>Team placeholders - Generated for demonstration purposes</li>
+            </ul>
+
+            <h3>Data Sources</h3>
+            <ul>
+                <li>Internet Users Statistic - ITU South Sudan Digital Reports</li>
+                <li>Tech Startup Count - South Sudan Tech Hub Surveys</li>
+                <li>Employment Data - South Sudan Labor Statistics</li>
+            </ul>
+
+            <h3>Technologies Used</h3>
+            <ul>
+                <li>HTML5 - W3C Standards</li>
+                <li>CSS3 - Modern responsive design</li>
+                <li>JavaScript - Vanilla JS (no frameworks)</li>
+                <li>Fonts - Google Fonts (Poppins, Roboto)</li>
+            </ul>
+
+            <h3>Learning Resources Referenced</h3>
+            <ul>
+                <li>MDN Web Docs - JavaScript and Web Standards</li>
+                <li>W3C - Accessibility Guidelines (WCAG)</li>
+                <li>Google Lighthouse - Performance optimization</li>
+            </ul>
+
+            <p style="margin-top: 2rem; font-size: 0.9rem; color: var(--text-light);">
+                <strong>Educational Disclaimer:</strong> This is a WDD131 course project created for educational 
+                purposes to demonstrate HTML, CSS, and JavaScript proficiency. The content is for illustration only.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>South Sudan Digital Hub</h4>
+                <p>Empowering youth through technology and innovation</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@ssdh.org</p>
+                <p>Phone: +211 (092) 933-7699</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 South Sudan Digital Hub. All rights reserved.</p>
+            <p><a href="about.html#references">References & Attributions</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

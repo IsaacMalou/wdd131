@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="South Sudan Digital Hub - Connecting young people with digital skills, innovation opportunities, and technology resources to drive economic growth.">
+    <meta name="author" content="Isaac Malou">
+    <meta name="theme-color" content="#0F172A">
+    
+    <title>South Sudan Digital Hub - Technology & Innovation Hub</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <img src="images/ssdh_logo0.png" alt="SSDH Logo" class="nav-logo">
+                <span>South Sudan Digital Hub</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Empowering South Sudan Through Technology</h1>
+                <p class="hero-subtitle">Learn digital skills, discover opportunities, and join innovation leaders transforming our nation</p>
+                <div class="hero-buttons">
+                    <a href="opportunities.html" class="btn btn-primary">Explore Opportunities</a>
+                    <a href="#skills-quiz" class="btn btn-secondary">Test Your Skills</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-tech.png" alt="South Sudan Digital Innovation" loading="lazy">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Digital Impact Statistics -->
+        <section class="statistics">
+            <div class="container">
+                <h2>South Sudan's Digital Transformation</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="stat-number" id="stat-users">2.1M+</h3>
+                        <p>Internet Users</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" id="stat-startups">450+</h3>
+                        <p>Tech Startups</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" id="stat-jobs">15K+</h3>
+                        <p>Digital Jobs Available</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number" id="stat-trained">50K+</h3>
+                        <p>Skills Trained</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Assessment Quiz -->
+        <section class="skills-quiz" id="skills-quiz">
+            <div class="container">
+                <h2>Assess Your Digital Skills</h2>
+                <p class="section-subtitle">Quick 5-question assessment to identify your tech readiness level</p>
+                
+                <div class="quiz-container">
+                    <form id="quizForm">
+                        <div class="quiz-questions" id="quizQuestions">
+                            <!-- Questions will be populated by JavaScript -->
+                        </div>
+                        <button type="submit" class="btn btn-primary">Get My Results</button>
+                    </form>
+                    
+                    <div id="quizResults" class="quiz-results" style="display: none;">
+                        <h3>Your Digital Skills Level</h3>
+                        <div class="result-badge" id="resultBadge"></div>
+                        <p id="resultMessage"></p>
+                        <div id="recommendedPath"></div>
+                        <button class="btn btn-secondary" onclick="document.getElementById('quizForm').style.display='block'; document.getElementById('quizResults').style.display='none'; document.getElementById('quizForm').reset();">
+                            Retake Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Opportunities -->
+        <section class="featured-opportunities">
+            <div class="container">
+                <h2>Latest Opportunities</h2>
+                <div class="opportunity-cards" id="opportunityCards">
+                    <!-- Populated by JavaScript -->
+                </div>
+                <div class="view-all">
+                    <a href="opportunities.html" class="btn btn-outline">View All Opportunities</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation Highlights -->
+        <section class="innovations">
+            <div class="container">
+                <h2>South Sudan Tech Leaders</h2>
+                <div class="innovation-grid" id="innovationGrid">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup Form -->
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated on Digital Opportunities</h2>
+                <p>Get weekly updates on jobs, skills training, and tech events in South Sudan</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="text" id="userName" name="name" placeholder="Your Full Name" required>
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="userEmail" name="email" placeholder="your@email.com" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <label>
+                            <input type="checkbox" name="interests" value="jobs"> Job Opportunities
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="training"> Skills Training
+                        </label>
+                        <label>
+                            <input type="checkbox" name="interests" value="events"> Tech Events
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>South Sudan Digital Hub</h4>
+                <p>Empowering youth through technology and innovation</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="opportunities.html">Opportunities</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: info@ssdh.org</p>
+                <p>Phone: +211 (092) 933-7699</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 South Sudan Digital Hub. All rights reserved.</p>
+            <p><a href="about.html#references">References & Attributions</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
